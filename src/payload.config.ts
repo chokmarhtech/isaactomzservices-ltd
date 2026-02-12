@@ -54,7 +54,24 @@ export default buildConfig({
         },
       ],
     },
+    components: {
+      graphics: {
+        Logo: '/components/Logo/Logo',
+        Icon: '/components/Logo/Icon',
+      },
+    },
+    meta: {
+      titleSuffix: '- Isaac Tomz Services',
+      icons: [
+        {
+          rel: 'icon',
+          type: 'image/svg+xml',
+          url: '/favicon.svg',
+        },
+      ],
+    },
   },
+
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
   email: resendAdapter({
